@@ -16,8 +16,8 @@ You need a few things for this to work properly:
 
 ## puma-dev
 
-- install with `brew install puma-dev`
-- run `sudo puma-dev setup` so it can resolve domains for you
+- install with `brew install puma/puma/puma-dev`
+- run `sudo puma-dev -setup` so it can resolve domains for you
 - run `puma-dev -install`
 - You need to trust puma-dev's certificate. Open the certificate file, `~/Library/Application\ Support/io.puma.dev/cert.pem`, in Keychain Access. Right-click on the certificate from inside Keychain Access, click "Get Info", uncollapse the "Trust" section, then change the settings for "Secure Sockets Layer (SSL)" and "X.509 Basic Policy" to "Always Trust". Close the "Get Info" window, and you will be prompted to enter your administrator password. Once you do that, it should be trusted, at least in Chrome.
 - To trust it in Firefox, go to `about:config` and change the setting `security.enterprise_roots.enabled` to `true`. This will make Firefox trust your system certificates.
